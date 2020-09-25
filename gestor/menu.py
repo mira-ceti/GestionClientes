@@ -1,13 +1,14 @@
 """ Menú del programa """
 
-import os
+import helpers
+import manager
 
 
 def loop():
 
     while True:
 
-        os.system('clear')  # 'cls' para Windows
+        helpers.clear()
 
         print("========================")
         print("  BIENVENIDO AL GESTOR  ")
@@ -22,14 +23,14 @@ def loop():
 
         option = input("> ")
 
-        os.system('clear')  # 'cls' para Windows
+        helpers.clear()
 
         if option == '1':
             print("Listando los clientes...\n")
-            # TODO
+            manager.show_all()
         if option == '2':
             print("Mostrando un cliente...\n")
-            # TODO
+            manager.find()
         if option == '3':
             print("Modificando un cliente...\n")
             # TODO
