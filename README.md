@@ -6,6 +6,12 @@ Ver tutoriales.
 # Para Activar el Entorno Virtual:
 pipenv shell
 
+# Para ejecutar este programa:
+pipenv run python core.py  (Si la máquina tiene python, simplemente python core.py)
+
+# Para lanzar el test del def is_valid(dni) del manager.py:
+pipenv run python manager.py -v (Si la máquina tiene python, simplemente python manager.py -v)
+
 # Quick setup — if you’ve done this kind of thing before
 
 https://github.com/mira-ceti/GestorClientes.git
